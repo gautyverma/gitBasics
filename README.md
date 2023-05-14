@@ -2,7 +2,9 @@
 
 Doing some basic operations related to git.
 
-## Git - SubHeading
-Step 1 - 
-        - git status 
-        - git add
+## Git - Commands
+- git status - Check the unstaged changes
+- git add - (.) add all files & ("fileName") add individual file
+
+## Git - feature Branching
+- feature-1.0.0-readme
