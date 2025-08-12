@@ -52,3 +52,34 @@ git pull origin main
 # Fix conflicts in files marked with <<<<<<< and >>>>>>>
 git add <file>
 git commit
+```
+
+## 5. Undoing Changes
+| Command                       | Description                     |
+|-------------------------------|---------------------------------|
+| `git restore <file>`          | # Discard unstaged changes      |
+| `git restore <file>`          | # Discard unstaged changes      |
+| `git restore --staged <file>` | # Unstage file                  |
+| `git reset --hard HEAD~1`     | # Remove last commit & changes  |
+| `git revert <commit-id>`      | # Undo commit with a new commit |
+
+## 6. Fixing the Last Commit
+    - git commit --amend -m "new message"
+## 7. Recover Lost Commits
+    - git reflog
+    - git checkout <commit-id>
+## 8. Stashing Work
+    - git stash
+    - git stash list
+    - git stash apply
+    - git stash pop
+    - git stash drop
+
+## 9. Find a Bug (Bisect)
+    - git bisect start
+    - git bisect bad
+    - git bisect good <commit-id>
+    - git bisect reset
+
+## 10. Cherry-pick a Commit
+    - git cherry-pick <commit-id>
